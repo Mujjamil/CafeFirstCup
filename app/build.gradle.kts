@@ -15,6 +15,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -59,4 +60,8 @@ dependencies {
 
     //razorpay dependancy
     implementation("com.razorpay:checkout:1.6.26")
+
+    //profile
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+
 }
