@@ -1,0 +1,23 @@
+
+
+    <!-- drawable/vector.xml -->
+<vector
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aapt="http://schemas.android.com/aapt"
+android:width="21dp"
+android:height="21dp"
+android:viewportWidth="21"
+android:viewportHeight="21"
+    >
+<group>
+    <clip-path
+        android:pathData="M1 1H20V20H1V1Z"
+        />
+</group>
+<path
+    android:pathData="M1 1H20V20H1V1Z"
+    android:strokeWidth="2"
+    android:strokeLineCap="round"
+    android:strokeColor="#A6A6AA"
+    />
+</vector>

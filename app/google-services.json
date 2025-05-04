@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1099415267692",
+    "project_id": "cafefirstcup-786f8",
+    "storage_bucket": "cafefirstcup-786f8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099415267692:android:87bb27d867533e0ae5ab49",
+        "android_client_info": {
+          "package_name": "com.example.cafefirstcup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjC_JBNsa_ajJEZ8xoBAUqaSthITX0b2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

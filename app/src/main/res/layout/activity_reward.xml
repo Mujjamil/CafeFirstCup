@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/background">
+
+
+    <!-- Header Title -->
+    <!-- Points Card -->
+
+    <!-- Rewards Title -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/headerTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/bean"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/b" /> <!-- your coin icon -->
+
+        <TextView
+            android:id="@+id/tvCoinCount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:text="0"
+            android:textColor="@color/brown_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/headerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/reg"
+        android:text="Rewards  Perks"
+        android:textColor="#4E342E"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/pointsCard"
+        android:layout_width="367dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/b"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerTitle">
+
+
+        <TextView
+            android:id="@+id/pointsSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/reg"
+            android:text="850"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="56"
+            android:progressDrawable="@drawable/progress_bar" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rewardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Rewards"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#4E342E"
+        app:layout_constraintTop_toBottomOf="@id/pointsCard"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Rewards List -->
+    <LinearLayout
+        android:id="@+id/rewardsList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/rewardTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="☕ Free Espresso - 500 Beanpoints"
+            android:fontFamily="@font/lato"
+            android:background="@drawable/button_rounded"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🥐 20% off Pastry - 800 Beanpoints"
+            android:fontFamily="@font/lato"
+            android:background="@drawable/button_rounded"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🥤 Free Drink - 1500 Beanpoints"
+            android:fontFamily="@font/lato"
+            android:background="@drawable/button_rounded"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+    </LinearLayout>
+
+    <!-- Daily Challenge Title -->
+
+    <!-- Daily Challenge Description -->
+    <TextView
+        android:id="@+id/dailyChallengeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato"
+        android:text=" ⚡️Daily Challenge"
+        android:textColor="#4E342E"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rewardsList" />
+
+    <TextView
+        android:id="@+id/dailyChallengeDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy 2 coffees today and earn 50 extra points! ☕☕"
+        android:fontFamily="@font/lato"
+        android:textColor="#5D4037"
+        app:layout_constraintTop_toBottomOf="@id/dailyChallengeTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="17dp"/>
+
+    <!-- Daily Challenge Button -->
+    <Button
+        android:id="@+id/dailyChallengeButton"
+        android:layout_width="358dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="@font/regular"
+
+        android:text="Take the Challenge"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dailyChallengeDesc"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

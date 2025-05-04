@@ -1,0 +1,35 @@
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/category_button_bg"
+    android:padding="13dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginEnd="10dp">
+
+    <ImageView
+        android:id="@+id/categoryImage"
+        android:src="@drawable/ic_coffee"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="coffee" />
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COFFEE"
+        android:fontFamily="@font/lato"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/brown"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
+
